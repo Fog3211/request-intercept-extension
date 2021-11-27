@@ -1,0 +1,61 @@
+Arguments: 
+  /Users/renqingzhong/.nvm/versions/node/v14.17.1/bin/node /Users/renqingzhong/.yarn/bin/yarn.js set version berry
+
+PATH: 
+  /Users/renqingzhong/Develop/platform-tools:/Users/renqingzhong/.yarn/bin:/Users/renqingzhong/.config/yarn/global/node_modules/.bin:/Users/renqingzhong/Library/pnpm:/Users/renqingzhong/.deno/bin:/Users/renqingzhong/.nvm/versions/node/v14.17.1/bin:/Users/renqingzhong/.yvm/shim:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Users/renqingzhong/Develop/platform-tools:/Users/renqingzhong/.yarn/bin:/Users/renqingzhong/.config/yarn/global/node_modules/.bin:/Users/renqingzhong/Library/pnpm:/Users/renqingzhong/.deno/bin:/Users/renqingzhong/.nvm/versions/node/v14.17.1/bin:/Users/renqingzhong/.yvm/shim:/Users/renqingzhong/.cargo/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.17.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://github.com/yarnpkg/berry/raw/master/packages/yarnpkg-cli/bin/yarn.js: ETIMEDOUT
+      at Timeout._onTimeout (/Users/renqingzhong/.yarn/lib/cli.js:141545:19)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "request-intercept-extension",
+    "version": "1.0.0",
+    "description": "A chrome extension for intercept and review http request",
+    "main": "index.js",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "preview": "vite preview",
+      "preinstall": "npx -y only-allow yarn"
+    },
+    "dependencies": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+      "@types/react": "^17.0.37",
+      "@types/react-dom": "^17.0.11",
+      "@vitejs/plugin-react": "^1.1.0",
+      "typescript": "^4.5.2",
+      "vite": "^2.6.14"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Fog3211/request-intercept-extension.git"
+    },
+    "author": "Fog3211",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/Fog3211/request-intercept-extension/issues"
+    },
+    "homepage": "https://github.com/Fog3211/request-intercept-extension#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

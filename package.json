@@ -1,0 +1,33 @@
+{
+  "name": "request-intercept-extension",
+  "version": "1.0.0",
+  "description": "A chrome extension for intercept and review http request",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "preinstall": "npx -y only-allow yarn"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@vitejs/plugin-react": "^1.1.0",
+    "typescript": "^4.5.2",
+    "vite": "^2.6.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fog3211/request-intercept-extension.git"
+  },
+  "author": "Fog3211",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fog3211/request-intercept-extension/issues"
+  },
+  "homepage": "https://github.com/Fog3211/request-intercept-extension#readme"
+}

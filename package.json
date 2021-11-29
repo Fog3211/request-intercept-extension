@@ -4,6 +4,7 @@
   "description": "A chrome extension for intercept and review http request",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",

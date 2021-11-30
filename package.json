@@ -5,21 +5,42 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "preinstall": "npx -y only-allow yarn"
+    "dev": "cd scripts && node dev.js",
+    "watch": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "webpack --config webpack/webpack.prod.js",
+    "preinstall": "npx only-allow yarn"
   },
   "dependencies": {
+    "dayjs": "^1.10.7",
+    "lodash-es": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/chrome": "^0.0.164",
+    "@types/lodash-es": "^4.17.5",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "@vitejs/plugin-react": "^1.1.0",
+    "@umijs/fabric": "^2.8.1",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-import": "^1.13.3",
+    "classnames": "^2.3.1",
+    "copy-webpack-plugin": "^10.0.0",
+    "css-loader": "^6.5.1",
+    "live-server": "^1.2.1",
+    "prettier": "^2.5.0",
+    "rimraf": "^3.0.2 ",
+    "sass": "^1.43.5",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
     "typescript": "^4.5.2",
-    "vite": "^2.6.14"
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-merge": "^5.8.0"
   },
   "repository": {
     "type": "git",
